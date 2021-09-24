@@ -122,7 +122,9 @@ th {
     <!--日付-->
     <form action="/" method="get">
     @csrf
-    <td></td>
+    <td>
+      {{ \Carbon\Carbon::now() }}
+</td>
 
 <!--タスク入力結果-->
 
