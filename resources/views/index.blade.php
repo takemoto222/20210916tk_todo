@@ -123,7 +123,7 @@ th {
     <form action="/" method="get">
     @csrf
     <td>
-      {{ \Carbon\Carbon::now() }}
+      {{$item->created_at}}
 </td>
 
 <!--タスク入力結果-->
@@ -132,7 +132,9 @@ th {
 
 <!--更新ボタン-->
 
-    <td><input class="update" type="submit" name="update" value="更新"> </td>
+    <td>
+      <input class="update" type="submit" name="update" value="更新"> 
+    </td>
 
 <!--削除ボタン-->
 

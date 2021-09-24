@@ -49,7 +49,7 @@
       @csrf
     <td><!--更新--></td>
     </form>
-    <form action="/delete" method="post">
+    <form action="/delete/{{$item->id}}" method="post">
       @csrf
     <td><!--削除--></td>
     </form>
