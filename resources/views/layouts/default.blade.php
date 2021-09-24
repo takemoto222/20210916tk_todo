@@ -37,33 +37,6 @@
 
       @yield('content')
   <tr>
-    <form action="/" method="get">
-      @csrf
-    <td><!--時刻を埋め込む--></td>
-    </form>
-    <form action="/" method="post">
-      @csrf
-    <td><!--タスク名--></td>
-    </form>
-    <form action="/edit" method="post">
-      @csrf
-    <td><!--更新--></td>
-    </form>
-    <form action="/delete/{{$item->id}}" method="post">
-      @csrf
-    <td><!--削除--></td>
-    </form>
-  </tr>
 
-
-</table>
-    <!--タスク-->
-  </div>
-    <!--メインボックスここまで-->
-</div>
-
-
-
-    </div>
 </body>
 </html>

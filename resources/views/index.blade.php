@@ -133,12 +133,13 @@ th {
 <!--更新ボタン-->
 
     <td>
-      <input class="update" type="submit" name="update" value="更新"> 
+      <input class="update" type="submit" name="update" value="更新">
     </td>
 
 <!--削除ボタン-->
 
-    <td><input class="delete" type="submit"  value="削除"></td>
+    <td><input class="delete" type="submit"  value="削除"  onclick="">
+  </td>
 
   </tr>
 @endforeach
