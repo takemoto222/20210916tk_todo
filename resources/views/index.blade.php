@@ -120,7 +120,7 @@ th {
   @foreach ($items as $item)
   <tr>
     <!--日付-->
-    <form action="/" method="get">
+   
     @csrf
     <td>
       {{$item->created_at}}
@@ -138,7 +138,7 @@ th {
 
 <!--削除ボタン-->
 
-    <td><input class="delete" type="submit"  value="削除"  onclick="">
+    <td><input class="delete" type="submit"  value="削除">
   </td>
 
   </tr>
@@ -146,7 +146,7 @@ th {
 
 </table>
 
-    </form>
+ 
 @endsection
     <!--タスク-->
 

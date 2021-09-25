@@ -36,7 +36,15 @@
 
 
       @yield('content')
+
+
+
   <tr>
+          <form class="delete" action="/delete/input">
+        @csrf
+          <td></td>
+        </form>
+</tr>
 
 </body>
 </html>
