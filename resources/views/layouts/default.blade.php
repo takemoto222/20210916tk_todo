@@ -40,7 +40,7 @@
 
 
   <tr>
-          <form class="delete" action="/delete/input">
+          <form action="/delete/input"　method="post">
         @csrf
           <td></td>
         </form>
