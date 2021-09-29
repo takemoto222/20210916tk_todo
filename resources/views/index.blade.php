@@ -129,7 +129,7 @@ th {
 <!--タスク入力結果-->
 
     <td>
-      <input class="task-space" type="text" name="content" value="{{$item->content}}" action="/delete/input">
+      <input class="task-space" type="text" name="content" value="{{$item->content}}">
 </td>
 
 <!--更新ボタン-->
@@ -139,10 +139,15 @@ th {
     </td>
 
 <!--削除ボタン-->
-
+<form action="/delete"　method="post">
+          <!--id取得の記述-->
+        @csrf
     <td>
-      <input class="delete" type="submit"  value="削除" action="{{$getDetail}}">
+      <input class="delete" type="submit"  value="削除">
   </td>
+</form>
+
+
 
   </tr>
 @endforeach

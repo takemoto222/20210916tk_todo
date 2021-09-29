@@ -39,12 +39,6 @@
 
 
 
-  <tr>
-          <form action="/delete/input"　method="post">
-          <!--id取得の記述-->
-        @csrf
-        </form>
-</tr>
 
 </body>
 </html>
