@@ -136,7 +136,7 @@ th {
 <form action="/update/index" method="post">
 @csrf
     <td>
-      <input type="hidden" name="id" href="{{ route('todo_edit') }}?id={{$item->id}} " value="{{$item->id}}">
+      <input type="hidden" name="id" value="{{$item->id}}">
       <input class="update" type="submit" name="update" value="更新">
     </td>
 </form>
