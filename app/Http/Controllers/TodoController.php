@@ -31,7 +31,6 @@ public function edit(Request $request)
 {
     $param = ['id' => $request->id];
     $item = DB::select('select * from todos where id = :id', $param);
-    unset($form['_token']);
     return view('edit', ['form' => $item[0]]);
 }
 public function update(Request $request)
