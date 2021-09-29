@@ -128,7 +128,9 @@ th {
 
 <!--タスク入力結果-->
 
-    <td><input class="task-space" type="text" name="content" value="{{$item->content}}"></td>
+    <td>
+      <input class="task-space" type="text" name="content" value="{{$item->content}}" action="/delete/input">
+</td>
 
 <!--更新ボタン-->
 
@@ -138,8 +140,8 @@ th {
 
 <!--削除ボタン-->
 
-    <td><input class="delete" type="submit"  value="削除">
-    {{$item->delete_at}}
+    <td>
+      <input class="delete" type="submit"  value="削除" action="{{$getDetail}}">
   </td>
 
   </tr>
@@ -149,7 +151,6 @@ th {
 
 
 @endsection
-    <!--タスク-->
-
+    <!--タスク--
 
 

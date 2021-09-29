@@ -41,8 +41,8 @@
 
   <tr>
           <form action="/delete/input"　method="post">
+          <!--id取得の記述-->
         @csrf
-          <td></td>
         </form>
 </tr>
 
