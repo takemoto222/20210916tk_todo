@@ -8,8 +8,8 @@ use Carbon\Carbon;
 
 Route::get('/', [TodoController::class, 'index']);
 Route::post('/', [TodoController::class, 'create']);
-Route::get('/edit', [TodoController::class, 'edit']);
-Route::post('/edit', [TodoController::class, 'update']);
+Route::get('/edit/index', [TodoController::class, 'edit'])->name('todo_edit');
+Route::post('/edit/index', [TodoController::class, 'update'])->name('todo_update');
 Route::get('/delete/index', [TodoController::class, 'delete']);
 Route::post('/delete/index', [TodoController::class, 'remove']);
 

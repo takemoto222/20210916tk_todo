@@ -127,23 +127,26 @@ th {
 </td>
 
 <!--タスク入力結果-->
-
+<form action="/update/index" method="get">
     <td>
       <input class="task-space" type="text" name="content" value="{{$item->content}}">
 </td>
 
 <!--更新ボタン-->
-
+<form action="/update/index" method="post">
+@csrf
     <td>
+      <input type="hidden" name="id" href="{{ route('todo_edit') }}?id={{$item->id}} " value="{{$item->id}}">
       <input class="update" type="submit" name="update" value="更新">
     </td>
+</form>
 
 <!--削除ボタン-->
 <form action="/delete/index" method="post">
           <!--id取得の記述-->
         @csrf
     <td>
-      <input type="hidden" name="delete" value="{{$item->id}}">
+      <input type="hidden" name="id" value="{{$item->id}}">
       <input class="delete" type="submit"  value="削除">
   </td>
 </form>
