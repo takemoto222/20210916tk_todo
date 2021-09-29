@@ -139,10 +139,11 @@ th {
     </td>
 
 <!--削除ボタン-->
-<form action="/delete"　method="post">
+<form action="/delete/index" method="post">
           <!--id取得の記述-->
         @csrf
     <td>
+      <input type="hidden" name="delete" value="{{$item->id}}">
       <input class="delete" type="submit"  value="削除">
   </td>
 </form>
