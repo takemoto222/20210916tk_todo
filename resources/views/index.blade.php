@@ -136,7 +136,8 @@ th {
 <form action="/edit/index" method="post">
 @csrf
     <td>
-      <input type="text" name="id" value="{{$item->content}}">
+      <input type="hidden" name="id" value="{{$item->id}}">
+      <input type="text" name="content" value="{{$item->content}}">
       <input class="update" type="submit" name="update" value="更新">
     </td>
 </form>
