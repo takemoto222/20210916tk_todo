@@ -120,7 +120,7 @@ th {
   @foreach ($items as $item)
   <tr>
     <!--日付-->
-
+<form action="/edit/index" method="post">
     @csrf
     <td>
       {{$item->created_at}}
@@ -133,11 +133,10 @@ th {
 </td>
 
 <!--更新ボタン-->
-<form action="/edit/index" method="post">
+
 @csrf
     <td>
       <input type="hidden" name="id" value="{{$item->id}}">
-      <input type="text" name="content" value="{{$item->content}}">
       <input class="update" type="submit" name="update" value="更新">
     </td>
 </form>
