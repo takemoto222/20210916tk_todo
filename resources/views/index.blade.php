@@ -127,7 +127,14 @@ th {
 </td>
 
 <!--タスク入力結果-->
-
+      @if ($errors->has('content'))
+        <tr>
+          <th>ERROR</th>
+          <td>
+            {{$errors->first('content')}}
+          </td>
+        </tr>
+      @endif
     <td>
       <input class="task-space" type="text" name="content" value="{{$item->content}}">
 </td>
@@ -135,14 +142,6 @@ th {
 <!--更新ボタン-->
 
 @csrf
-      @if ($errors->has('name'))
-        <tr>
-          <th>ERROR</th>
-          <td>
-            {{$errors->first('name')}}
-          </td>
-        </tr>
-      @endif
     <td>
       <input type="hidden" name="id" value="{{$item->id}}">
       <input class="update" type="submit" name="update" value="更新">
