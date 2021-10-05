@@ -16,8 +16,14 @@
     <h2>Todo List</h2>
 
     <!--追加-->
+              @if ($errors->has('content'))
+
+            {{$errors->first('content')}}
+
+      @endif
     <form class="writespace-block" action="/" method="post">
     @csrf
+
       <input class="create-text" type="text" name="content">
       <input class="create-button" type="submit" value="追加">
     </form>

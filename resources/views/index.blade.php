@@ -127,14 +127,7 @@ th {
 </td>
 
 <!--タスク入力結果-->
-      @if ($errors->has('content'))
-        <tr>
-          <th>ERROR</th>
-          <td>
-            {{$errors->first('content')}}
-          </td>
-        </tr>
-      @endif
+
     <td>
       <input class="task-space" type="text" name="content" value="{{$item->content}}">
 </td>
