@@ -13,7 +13,7 @@ class Todo extends Model
         protected $fillable = ['id', 'content'];
 
         public static $rules = array(
-             'content' => 'required|max:20'
+            'content' => 'required|max:20'
         );
     public function getDetail()
     {
@@ -21,8 +21,4 @@ class Todo extends Model
         return $txt;
     }
 }
-
-
-'content' => 'required|max:20'
-'content' => 'required|max:20'
 
