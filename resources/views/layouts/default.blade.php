@@ -16,11 +16,13 @@
     <h2>Todo List</h2>
 
     <!--追加-->
+    <div class="error">
               @if ($errors->has('content'))
 
             {{$errors->first('content')}}
 
       @endif
+</div>
     <form class="writespace-block" action="/" method="post">
     @csrf
 

@@ -21,6 +21,10 @@ h2 {
   padding: 10px;
 }
 
+
+.error{
+  margin-left:20px;
+}
 /*追加*/
 .writespace-block {
   height: 35px;
